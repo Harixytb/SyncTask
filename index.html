@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncTask</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>SyncTask</h1>
+</header>
+<main>
+    <section class="task-manager">
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Ajouter une tâche...">
+            <input type="number" id="taskCostInput" placeholder="Coût (€)" min="0" step="0.01">
+            <input type="url" id="taskLinkInput" placeholder="Lien d'achat (optionnel)">
+            <button id="addTaskBtn">Ajouter</button>
+        </div>
+        <ul id="taskList"></ul>
+        <div class="total-cost">
+            Total : <span id="totalCost">0.00</span> € 🪙
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© 2025 SyncTask. Tout droit réservé. 🔒</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

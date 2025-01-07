@@ -1,0 +1,164 @@
+/* Couleurs de LinaGame */
+:root {
+    --primary-color: #0a192f;
+    --secondary-color: #64ffda;
+    --background-color: #112240;
+    --text-color: #e6f1ff;
+    --danger-color: #ff6b6b;
+    --highlight-color: #ffd700;
+}
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: var(--secondary-color);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Gestion des tâches */
+.task-manager {
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.task-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--background-color);
+    color: var(--text-color);
+    outline: none;
+}
+
+.task-input button {
+    background: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.task-input button:hover {
+    background: #52e3c2;
+}
+
+/* Liste des tâches */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    background: var(--background-color);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.task-item span {
+    flex: 1;
+}
+
+.task-item .task-cost {
+    margin-left: 10px;
+    color: var(--highlight-color);
+}
+
+.task-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.task-item a:hover {
+    color: #52e3c2;
+}
+
+.task-item button {
+    background: var(--danger-color);
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.task-item button:hover {
+    background: #ff4b4b;
+}
+
+.task-item button.edit {
+    background: var(--secondary-color);
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background 0.3s ease;
+}
+
+.task-item button.edit:hover {
+    background: #52e3c2;
+}
+
+
+/* Total */
+.total-cost {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: var(--highlight-color);
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 500px;
+    font-size: 0.9em;
+}
